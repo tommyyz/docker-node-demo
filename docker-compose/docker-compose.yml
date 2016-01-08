@@ -1,0 +1,7 @@
+web:
+  image: node
+  ports:
+    - "8081:8080"
+  volumes:
+    - ../src:/src
+  command: bash -c 'cd /src && npm install && node index.js'
